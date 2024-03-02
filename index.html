@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class=" w-[800px] m-auto mt-10 ">
+        <div class="h-[100px] flex justify-around items-center">
+
+            <div class="flex items-center flex-col gap-2">
+                <label for="color" class="text-2xl">Text Color picker</label>
+                <input class="border border-black w-36 px-1 cursor-pointer" id="color" type="color">
+            </div>
+
+            <div class="flex items-center flex-col gap-2">
+                <label for="Background" class="text-2xl">Background</label>
+                <input class="w-36 border border-black px-1 cursor-pointer" id="Background" type="color">
+            </div>
+
+            <div class="flex items-center flex-col gap-2">
+                <label for="number" class="text-2xl">Font Size</label>
+                <input class="border border-black placehold cursor-pointerer:text-black w-36 px-2" id="number" type="number"
+                    placeholder="E.g : 0px">
+            </div>
+        </div>
+        <div id="textareaBack" class="h-[400px] border-[1.5px] border-black p-2 overflow-hidden ">
+            <textarea id="TextareaEl" class="h-full w-full outline-0" placeholder="E.g : text">
+                
+            </textarea>
+        </div>
+        <div class="h-[70px] flex justify-around items-center mt-2">
+            <button id="clear" type="button" class="focus:outline-none text-white bg-red-700 hover:bg-red-800 font-medium rounded-lg text-sm px-20 py-3 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Clear</button>
+            <button id="save" type="button" class="focus:outline-none text-white bg-green-700 hover:bg-green-800 font-medium rounded-lg text-sm px-20 py-3 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Save & Download</button>
+            <button id="retrive" type="button" class="focus:outline-none text-white bg-orange-400 hover:bg-orange-500 font-medium rounded-lg text-sm px-20 py-3 me-2 mb-2 dark:focus:ring-yellow-900">Retrive text</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
